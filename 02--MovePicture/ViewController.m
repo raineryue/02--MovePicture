@@ -24,6 +24,7 @@ typedef enum {
 
 /** 定义一个常量用来定义缩放尺寸 */
 #define kSizeZoom 10.0
+#define kMovePadding 10
 
 @interface ViewController ()
 
@@ -48,16 +49,16 @@ typedef enum {
     // 2.根据点击按钮的tag判断是什么操作，并作出反应
     switch (button.tag) {
         case TodoButtonTypeUp:
-            iconPictureFrame.origin.y -= 10;
+            iconPictureFrame.origin.y -= kMovePadding;
             break;
         case TodoButtonTypeLeft:
-            iconPictureFrame.origin.x -= 10;
+            iconPictureFrame.origin.x -= kMovePadding;
             break;
         case TodoButtonTypeDown:
-            iconPictureFrame.origin.y += 10;
+            iconPictureFrame.origin.y += kMovePadding;
             break;
         case TodoButtonTypeRight:
-            iconPictureFrame.origin.x += 10;
+            iconPictureFrame.origin.x += kMovePadding;
             break;
         case TodoButtonTypeBig:
             iconPictureFrame.size.height += kSizeZoom;
