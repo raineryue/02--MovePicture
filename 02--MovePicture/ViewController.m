@@ -81,5 +81,4 @@ typedef enum {
     self.iconPicture.frame = iconPictureFrame;
 }
 
-
 @end

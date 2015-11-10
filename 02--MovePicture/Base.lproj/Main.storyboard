@@ -65,18 +65,8 @@
                                     <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pw-iZ-zbX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQp-ow-C0E" userLabel="减小">
-                                <rect key="frame" x="232" y="528" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="minus_normal"/>
-                                <state key="highlighted" image="minus_highlighted"/>
-                                <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoQ-rY-NYH"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RRx-EY-HZy" userLabel="右转">
-                                <rect key="frame" x="270" y="484" width="30" height="30"/>
+                                <rect key="frame" x="270" y="518" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="right_rotate_normal"/>
@@ -86,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X5j-0M-sKy" userLabel="增大">
-                                <rect key="frame" x="232" y="447" width="30" height="30"/>
+                                <rect key="frame" x="209" y="455" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="plus_normal"/>
@@ -96,13 +86,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="92l-l5-THe" userLabel="左转">
-                                <rect key="frame" x="192" y="484" width="30" height="30"/>
+                                <rect key="frame" x="209" y="518" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="left_rotate_normal"/>
                                 <state key="highlighted" image="left_rotate_highlighted"/>
                                 <connections>
                                     <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7Q-Z9-8Fp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQp-ow-C0E" userLabel="减小">
+                                <rect key="frame" x="270" y="455" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="minus_normal"/>
+                                <state key="highlighted" image="minus_highlighted"/>
+                                <connections>
+                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoQ-rY-NYH"/>
                                 </connections>
                             </button>
                         </subviews>
