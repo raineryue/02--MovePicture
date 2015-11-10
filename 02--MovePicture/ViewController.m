@@ -40,13 +40,13 @@ typedef enum {
 }
 
 /**
- *  按钮事件
+ *  上下左右移动按钮事件
  */
-- (IBAction)todoButtonClickAction:(UIButton *)button {
+- (IBAction)moveWithButton:(UIButton *)button {
     // 1.取出头像按钮的Frame
     CGRect iconPictureFrame = self.iconPicture.frame;
     
-    // 2.根据点击按钮的tag判断是什么操作，并作出反应
+    // 2.根据tag判断按钮的操作，并作出相应的动作
     switch (button.tag) {
         case TodoButtonTypeUp:
             iconPictureFrame.origin.y -= kMovePadding;
@@ -60,6 +60,27 @@ typedef enum {
         case TodoButtonTypeRight:
             iconPictureFrame.origin.x += kMovePadding;
             break;
+    }
+    
+    // 3.将重新设置的frame重新赋值给头像
+    // 3.1.加上收尾式动画
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelay:1.0];
+    
+    self.iconPicture.frame = iconPictureFrame;
+    
+    [UIView commitAnimations];
+}
+
+/**
+ *  放大缩小按钮事件
+ */
+- (IBAction)zoomWithButton:(UIButton *)button {
+    // 1.取出头像按钮的Frame
+    CGRect iconPictureFrame = self.iconPicture.bounds;
+    
+    // 2.根据点击按钮的tag判断是什么操作，并作出反应
+    switch (button.tag) {
         case TodoButtonTypeBig:
             iconPictureFrame.size.height += kSizeZoom;
             iconPictureFrame.size.width += kSizeZoom;
@@ -68,17 +89,16 @@ typedef enum {
             iconPictureFrame.size.height -= kSizeZoom;
             iconPictureFrame.size.width -= kSizeZoom;
             break;
-        case TodoButtonTypeTurnLeft:
-            
-            break;
-        case TodoButtonTypeTurnRight:
-            
-            break;
         default:
             break;
     }
     
-    self.iconPicture.frame = iconPictureFrame;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelay:1.0];
+    
+    self.iconPicture.bounds = iconPictureFrame;
+
+    [UIView commitAnimations];
 }
 
 @end
