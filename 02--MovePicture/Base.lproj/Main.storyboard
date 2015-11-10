@@ -32,7 +32,7 @@
                                 <state key="normal" title="Button" image="top_normal"/>
                                 <state key="highlighted" image="top_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDM-87-cTg"/>
+                                    <action selector="moveWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDl-yt-A63"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aJf-cg-df8" userLabel="下">
@@ -42,7 +42,7 @@
                                 <state key="normal" title="Button" image="bottom_normal"/>
                                 <state key="highlighted" image="bottom_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqI-82-paw"/>
+                                    <action selector="moveWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktz-yi-AZT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uLK-Hf-HYF" userLabel="左">
@@ -52,7 +52,7 @@
                                 <state key="normal" title="Button" image="left_normal"/>
                                 <state key="highlighted" image="left_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9aa-MQ-wfa"/>
+                                    <action selector="moveWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACn-8Q-7aH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-eP-qKI" userLabel="右">
@@ -62,47 +62,47 @@
                                 <state key="normal" title="Button" image="right_normal"/>
                                 <state key="highlighted" image="right_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pw-iZ-zbX"/>
+                                    <action selector="moveWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEc-sk-Gxg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RRx-EY-HZy" userLabel="右转">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RRx-EY-HZy" userLabel="右转">
                                 <rect key="frame" x="270" y="518" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="right_rotate_normal"/>
                                 <state key="highlighted" image="right_rotate_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="px8-Nh-vyG"/>
+                                    <action selector="rotateWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32B-Yr-i34"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X5j-0M-sKy" userLabel="增大">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X5j-0M-sKy" userLabel="增大">
                                 <rect key="frame" x="209" y="455" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="plus_normal"/>
                                 <state key="highlighted" image="plus_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aED-v0-XA9"/>
+                                    <action selector="zoomWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipa-bo-jSH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="92l-l5-THe" userLabel="左转">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="92l-l5-THe" userLabel="左转">
                                 <rect key="frame" x="209" y="518" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="left_rotate_normal"/>
                                 <state key="highlighted" image="left_rotate_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7Q-Z9-8Fp"/>
+                                    <action selector="rotateWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGT-Be-NXk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQp-ow-C0E" userLabel="减小">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQp-ow-C0E" userLabel="减小">
                                 <rect key="frame" x="270" y="455" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="minus_normal"/>
                                 <state key="highlighted" image="minus_highlighted"/>
                                 <connections>
-                                    <action selector="todoButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoQ-rY-NYH"/>
+                                    <action selector="zoomWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="og0-cw-6Qn"/>
                                 </connections>
                             </button>
                         </subviews>
