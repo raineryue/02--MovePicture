@@ -71,9 +71,12 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="right_rotate_normal"/>
                                 <state key="highlighted" image="right_rotate_highlighted"/>
+<<<<<<< HEAD
                                 <connections>
                                     <action selector="rotateWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32B-Yr-i34"/>
                                 </connections>
+=======
+>>>>>>> origin/master
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X5j-0M-sKy" userLabel="增大">
                                 <rect key="frame" x="209" y="455" width="30" height="30"/>
@@ -91,9 +94,12 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="left_rotate_normal"/>
                                 <state key="highlighted" image="left_rotate_highlighted"/>
+<<<<<<< HEAD
                                 <connections>
                                     <action selector="rotateWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGT-Be-NXk"/>
                                 </connections>
+=======
+>>>>>>> origin/master
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQp-ow-C0E" userLabel="减小">
                                 <rect key="frame" x="270" y="455" width="30" height="30"/>

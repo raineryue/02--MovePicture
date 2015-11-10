@@ -38,6 +38,7 @@ typedef enum {
  *  上下左右移动按钮事件
  */
 - (IBAction)moveWithButton:(UIButton *)button {
+<<<<<<< HEAD
     // 1.定义形变的变量,并初始化
     CGFloat dx = 0,dy = 0;
     
@@ -87,6 +88,64 @@ typedef enum {
     self.iconPicture.transform = CGAffineTransformRotate(self.iconPicture.transform, angle);
     
     [UIView commitAnimations];
+=======
+    // 1.取出头像按钮的Frame
+    CGRect iconPictureFrame = self.iconPicture.frame;
+    
+    // 2.根据tag判断按钮的操作，并作出相应的动作
+    switch (button.tag) {
+        case TodoButtonTypeUp:
+            iconPictureFrame.origin.y -= kMovePadding;
+            break;
+        case TodoButtonTypeLeft:
+            iconPictureFrame.origin.x -= kMovePadding;
+            break;
+        case TodoButtonTypeDown:
+            iconPictureFrame.origin.y += kMovePadding;
+            break;
+        case TodoButtonTypeRight:
+            iconPictureFrame.origin.x += kMovePadding;
+            break;
+    }
+    
+    // 3.将重新设置的frame重新赋值给头像
+    // 3.1.加上收尾式动画
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelay:1.0];
+    
+    self.iconPicture.frame = iconPictureFrame;
+    
+    [UIView commitAnimations];
+}
+
+/**
+ *  放大缩小按钮事件
+ */
+- (IBAction)zoomWithButton:(UIButton *)button {
+    // 1.取出头像按钮的Frame
+    CGRect iconPictureFrame = self.iconPicture.bounds;
+    
+    // 2.根据点击按钮的tag判断是什么操作，并作出反应
+    switch (button.tag) {
+        case TodoButtonTypeBig:
+            iconPictureFrame.size.height += kSizeZoom;
+            iconPictureFrame.size.width += kSizeZoom;
+            break;
+        case TodoButtonTypeMall:
+            iconPictureFrame.size.height -= kSizeZoom;
+            iconPictureFrame.size.width -= kSizeZoom;
+            break;
+        default:
+            break;
+    }
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelay:1.0];
+    
+    self.iconPicture.bounds = iconPictureFrame;
+
+    [UIView commitAnimations];
+>>>>>>> origin/master
 }
 
 @end
